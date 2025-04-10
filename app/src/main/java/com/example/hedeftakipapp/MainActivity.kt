@@ -1,5 +1,6 @@
 package com.example.hedeftakipapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val editTextEmail = findViewById<EditText>(R.id.editTextEmail)
         val editTextPassword = findViewById<EditText>(R.id.editTextPassword)
         val buttonLogin = findViewById<Button>(R.id.buttonLogin)
+        val buttonRegister = findViewById<Button>(R.id.buttonRegister)
 
         buttonLogin.setOnClickListener {
             val email = editTextEmail.text.toString()
@@ -25,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "E-posta veya şifre hatalı!", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        buttonRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 }
