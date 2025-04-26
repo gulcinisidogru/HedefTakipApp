@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,6 +7,7 @@
     android:gravity="center"
     android:background="#FAFAFA">
 
+    <!-- Giriş Alanları (E-posta ve Şifre) -->
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
@@ -26,13 +26,14 @@
         android:padding="12dp"
         android:layout_marginBottom="24dp"/>
 
+    <!-- Giriş Yap ve Kayıt Ol Butonları -->
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Giriş Yap"
         android:padding="12dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/buttonRegister"
@@ -40,4 +41,49 @@
         android:layout_height="wrap_content"
         android:text="Kayıt Ol"
         android:padding="12dp"/>
+
+    <!-- Yeni Hedef Ekleme Alanı Başlığı -->
+    <TextView
+        android:id="@+id/textViewGoalsListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hedeflerim"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Hedefler Listesi (Başlangıçta Boş) -->
+    <LinearLayout
+        android:id="@+id/linearLayoutGoalsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="2dp">
+        <!-- Hedefler Burada Görüntülenecek -->
+    </LinearLayout>
+
+    <!-- Yeni Hedef Ekleme Alanı -->
+    <EditText
+        android:id="@+id/editTextNewGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yeni Hedefinizi Girin"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FF5722"/>
+
+    <!-- Hedefi Ekleme Butonu -->
+    <Button
+        android:id="@+id/buttonAddGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hedefi Ekle"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:padding="12dp"/>
+
 </LinearLayout>

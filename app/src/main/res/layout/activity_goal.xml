@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hedef Ekle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Kartlar (Düğmeler ile hedefler) -->
+    <LinearLayout
+        android:id="@+id/linearLayoutGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- Kart 1 -->
+        <Button
+            android:id="@+id/buttonGoal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hedef 1"
+            android:padding="12dp" />
+
+        <!-- Kart 2 -->
+        <Button
+            android:id="@+id/buttonGoal2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hedef 2"
+            android:padding="12dp" />
+
+        <!-- Kart 3 -->
+        <Button
+            android:id="@+id/buttonGoal3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hedef 3"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Yeni Hedef Ekle Butonu -->
+    <Button
+        android:id="@+id/buttonAddGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeni Hedef Ekle"
+        android:padding="12dp" />
+</LinearLayout>
