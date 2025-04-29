@@ -31,7 +31,12 @@
         <!-- GoalsActivity: Hedefler sayfası -->
         <activity
             android:name=".GoalsActivity"
-            android:exported="false" />
+            android:exported="true" />
+
+        <!-- GoalActivity: Tek bir hedefin detay sayfası -->
+        <activity
+            android:name=".GoalActivity"
+            android:exported="true" />
 
     </application>
 
