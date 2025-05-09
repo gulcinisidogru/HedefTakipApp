@@ -3,34 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
-    android:background="#FAFAFA">
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textViewGoals"
+    <LinearLayout
+        android:id="@+id/linearLayoutGoals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bugün Hedefler"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"
-        android:gravity="start"
-        android:paddingStart="16dp"/>
-
-    <!-- Hedefler Listesi Burada Gösterilecek (Örn. RecyclerView) -->
-
-    <TextView
-        android:id="@+id/textViewDailyTasks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Günlük Görevler"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="24dp"
-        android:gravity="start"
-        android:paddingStart="16dp"/>
-
-    <!-- Günlük Görevler Listesi Burada Gösterilecek -->
-
+        android:orientation="vertical" />
 </LinearLayout>

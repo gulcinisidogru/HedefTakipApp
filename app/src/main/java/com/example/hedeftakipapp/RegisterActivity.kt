@@ -23,7 +23,6 @@ class RegisterActivity : AppCompatActivity() {
 
             if (name.isNotBlank() && email.isNotBlank() && password.isNotBlank()) {
                 Toast.makeText(this, "Kayıt Başarılı: $name", Toast.LENGTH_SHORT).show()
-                // Daha sonra burada veritabanına kayıt yapılacak
             } else {
                 Toast.makeText(this, "Lütfen tüm alanları doldurun", Toast.LENGTH_SHORT).show()
             }
