@@ -1,3 +1,7 @@
+
 <resources>
-    <string name="app_name">HedefTakipApp</string>
+<string name="app_name">Alışkanlık Takip</string>
+<string name="menu_profile">Profilim</string>
+<string name="menu_settings">Ayarlar</string>
+<string name="menu_info">Bilgi</string>
 </resources>

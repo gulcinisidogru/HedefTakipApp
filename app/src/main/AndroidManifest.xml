@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HedefTakipApp">
 
-        <!-- MainActivity: Uygulamanın başlangıç ekranı (LAUNCHER) -->
+        <!-- MainActivity (LAUNCHER) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,15 +20,20 @@
             </intent-filter>
         </activity>
 
-        <!-- Diğer aktiviteler (dışarıdan erişilemez) -->
-        <activity
-            android:name=".GoalsActivity"
-            android:exported="true" />
+        <!-- GoalActivity -->
         <activity
             android:name=".GoalActivity"
             android:exported="true" />
+
+        <!-- Diğer Aktiviteler -->
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InfoActivity"
             android:exported="true" />
 
     </application>
