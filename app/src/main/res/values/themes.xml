@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.HedefTakipApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- TEMEL UYGULAMA TEMASI (Light versiyonu) -->
+    <style name="Theme.HedefTakipApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
     </style>
 
-    <style name="Theme.HedefTakipApp" parent="Base.Theme.HedefTakipApp" />
+    <!-- SettingsActivity için özel tema -->
+    <style name="Theme.HedefTakipApp.Settings" parent="Theme.HedefTakipApp">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
 </resources>
