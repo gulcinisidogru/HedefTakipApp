@@ -9,53 +9,57 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <!-- Ana İçerik Alanı -->
+    <!-- 1. ANA İÇERİK -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Toolbar (ActionBar yerine kullanılacak) -->
+        <!-- Toolbar -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title="Alışkanlıklarım"
-            app:titleTextColor="@android:color/white"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            app:title="Alışkanlıklarım"/>
 
-        <!-- Ana İçerik -->
+        <!-- ScrollView TEK BİR CHILD İÇERMELİ -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true"
-            android:overScrollMode="never">
+            android:fillViewport="true">
 
+            <!-- Tüm içeriği bu LinearLayout içine alın -->
             <LinearLayout
-                android:id="@+id/habitsContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:clipToPadding="false" />
+                android:orientation="vertical">
+
+                <!-- Boş durum mesajı -->
+                <TextView
+                    android:id="@+id/textEmptyState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Henüz alışkanlık eklemediniz"
+                    android:gravity="center"
+                    android:padding="24dp"
+                    android:visibility="gone"/>
+
+                <!-- Alışkanlıklar buraya dinamik eklenecek -->
+                <LinearLayout
+                    android:id="@+id/habitsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
-    <!-- Navigation Drawer (Sol Menü) -->
+    <!-- 2. NAVIGATION DRAWER -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        android:background="@android:color/white"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu"
-        app:itemTextColor="@color/black"
-        app:itemIconTint="@color/purple_500"
-        app:elevation="8dp" />
-
+        app:menu="@menu/nav_menu"/>
 </androidx.drawerlayout.widget.DrawerLayout>

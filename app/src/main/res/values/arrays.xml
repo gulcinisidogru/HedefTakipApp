@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="motivation_messages">
+        <item>Harika devam et! 💪</item>
+        <item>Sen yapabilirsin! ✨</item>
+        <item>Mükemmel iş çıkardın! 🌟</item>
+        <item>Bugün de kazandın! 🏆</item>
+        <item>Alışkanlık gücün artıyor! 🔥</item>
+    </string-array>
+</resources>

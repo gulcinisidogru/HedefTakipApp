@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
     app:cardElevation="4dp">
 
     <LinearLayout
@@ -14,41 +13,47 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Alışkanlık Bilgileri -->
         <TextView
             android:id="@+id/textViewHabitName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alışkanlık Adı"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="4dp"/>
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textViewHabitDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Açıklama"
-            android:textSize="14sp"
-            android:textColor="@android:color/darker_gray"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"/>
 
+        <!-- 21 Günlük Takip -->
         <LinearLayout
             android:id="@+id/daysContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="8dp"/>
+            android:gravity="center"
+            android:padding="4dp"/>
+
+        <!-- Motivasyon Mesajı -->
+        <TextView
+            android:id="@+id/textMotivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/teal_700"
+            android:textStyle="italic"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/buttonRemoveHabit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kaldır"
-            android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
-            android:layout_gravity="end"/>
+            android:layout_marginTop="8dp"
+            android:text="KALDIR"/>
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

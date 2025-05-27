@@ -10,4 +10,6 @@
 <color name="card_habit_3">#F1F8E9</color>
 <color name="white">#FFFFFFFF</color>
 <color name="black">#FF000000</color>
+<color name="colorPrimaryDark">#1A237E</color>
+<color name="colorPrimaryLight">#E8EAF6</color>
 </resources>
