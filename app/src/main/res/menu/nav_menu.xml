@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item
-    android:id="@+id/menu_profile"
-    android:title="@string/menu_profile" />
-<item
-    android:id="@+id/menu_settings"
-    android:title="@string/menu_settings" />
-<item
-    android:id="@+id/menu_info"
-    android:title="@string/menu_info" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profilim" />
+        <item
+            android:id="@+id/menu_habits"
+            android:icon="@drawable/ic_habits"
+            android:title="Alışkanlıklarım" />
+    </group>
+
+    <item android:title="Ayarlar">
+        <menu>
+            <item
+                android:id="@+id/menu_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Ayarlar" />
+            <item
+                android:id="@+id/menu_info"
+                android:icon="@drawable/ic_info"
+                android:title="Hakkında" />
+        </menu>
+    </item>
 </menu>

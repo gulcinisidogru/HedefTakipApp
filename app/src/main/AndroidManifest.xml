@@ -14,9 +14,8 @@
         android:theme="@style/Theme.HedefTakipApp"
         android:requestLegacyExternalStorage="true">
 
-        <!-- Main Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,20 +23,23 @@
             </intent-filter>
         </activity>
 
-        <!-- Other Activities -->
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
+            android:name=".MainActivity"
+            android:exported="false" /> <activity
+        android:name=".ProfileActivity"
+        android:exported="false" />
         <activity
             android:name=".SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".GoalActivity"
+            android:name=".GoalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".InfoActivity"
             android:exported="false" />
 
     </application>
-
 </manifest>

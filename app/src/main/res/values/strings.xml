@@ -1,7 +1,11 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">Alışkanlık Takip</string>
-<string name="menu_profile">Profilim</string>
-<string name="menu_settings">Ayarlar</string>
-<string name="menu_info">Bilgi</string>
+    <string name="app_name">Alışkanlık Takip</string>
+    <string name="menu_profile">Profilim</string>
+    <string name="menu_settings">Ayarlar</string>
+    <string name="menu_info">Hakkında</string>
+    <string name="menu_habits">Alışkanlıklarım</string>
+    <string name="navigation_drawer_open">Menüyü aç</string>
+    <string name="navigation_drawer_close">Menüyü kapat</string>
+
 </resources>
