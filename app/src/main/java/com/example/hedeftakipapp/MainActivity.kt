@@ -1,5 +1,6 @@
 package com.example.hedeftakipapp
 
+//import ProfileActivity
 import android.content.Intent
 import android.graphics.Color
 import android.os.Build
