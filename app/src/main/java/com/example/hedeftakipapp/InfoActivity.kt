@@ -22,7 +22,7 @@ class InfoActivity : AppCompatActivity() {
             - Profilinizde istatistiklerinizi ve başarımlarınızı görün.
             - Tema ayarlarıyla uygulamayı kişiselleştirin.
 
-            Geliştirici: [Adınız/Şirketiniz]
+            Geliştirici: Gülçin İşidoğru
             Versiyon: 1.0.0
             Son Güncelleme: Mayıs 2025
         """.trimIndent()
